@@ -2,6 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+input, textarea, select {
+  @apply border-2 border-gray-300 rounded-md px-1 w-full;
+  @apply mb-2;
+}
+input:focus, textarea:focus, select:focus{
+  @apply  border-blue-900
+}
+
+h1 {
+  @apply text-blue-900 mb-2 text-xl;
+}
+
+label{
+  @apply text-blue-900;
+}
+img{
+  max-height: 100%
+}
+.btn-primary{
+  @apply bg-blue-900 text-white px-4 rounded-md py-1 ;
+}
+.btn-primary:hover{
+  @apply bg-blue-500;
+}
+table{
+  @apply w-full
+}
+table.basic thead tr td,
+table.basic thead tr th{
+  @apply text-sm text-gray-600 uppercase border-b border-gray-200 px-4 py-2
+}
+table.basic tr td{
+  @apply border border-blue-200 p-1;
+}
+table.basic a {
+  @apply bg-blue-900 text-white px-2 rounded-md py-1 inline-flex gap-1 mr-1;
+}
+table.basic a:hover{
+  @apply bg-blue-500;
+}
+.btn-red{
+  @apply bg-red-900 text-white px-4 rounded-md py-1 ;
+}
+.btn-red:hover{
+  @apply bg-red-500;
+}
+
+.btn-default{
+  @apply bg-gray-200 px-4 rounded-md py-1 ;
+}
+.btn-default:hover{
+  @apply bg-gray-500;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
